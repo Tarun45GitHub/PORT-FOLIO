@@ -14,14 +14,20 @@ body{
     font-family: 'Poppins', sans-serif;
     width: 99vw;
 }
-
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header{
     height: 75px;
     background-color: #014242;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: inline-block;
+}
+nav{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+   margin: 0 20px; 
    
 }
 nav ul{
@@ -35,6 +41,28 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   color: white;
+}
+.toggel_btn{
+  font-size: 25px;
+  float: right;
+  width: 35px;
+  align-items: center;
+  margin: 20px;
+  display: none;
+}
+@media only screen and (max-width:760px) {
+  nav ul{
+    display: none;
+  }
+  .toggel_btn{
+    display: block;
+  }
+  .showData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .firstSection{
     display: flex;
