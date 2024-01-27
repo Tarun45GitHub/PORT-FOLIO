@@ -6,13 +6,13 @@ main hr{
   border: 0;
   background-color: #9c97f1;
   height: 1.2px;
-  margin: 40px 84px;
+  margin: 2rem 5.3rem;
 }
 body{
     background-color:#012c2c;
     color: azure;
     font-family: 'Poppins', sans-serif;
-    width: 99vw;
+    width:100vw ;
 }
 header{
     height: 75px;
@@ -64,6 +64,40 @@ nav ul li a{
     align-items: center;
   }
 }
+.button-62 a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.button-62 {
+  margin: 0.5rem;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
 .firstSection{
     display: flex;
     justify-content: space-around;
@@ -80,10 +114,6 @@ nav ul li a{
   padding: 40px;
    
 }
-.button-85 a{
-  text-decoration: none;
-  color: aliceblue;
-}
 .purple{
   color:rgb(204, 35, 204);
   font-size: 3rem;
@@ -98,302 +128,62 @@ nav ul li a{
     width: 90%;
     
 }
-.button-85 {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(248, 245, 245);
-  background: #000803;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 20px;
-}
-
-.button-85:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
 .title{
     font-size: 2rem;
+}
+.fifthSection{
+  height: 100vh;
+  width: 100vw;
 }
 .fifth-Title{
   text-align: center;
   font-size: 3rem;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 0.4rem;
 }
 .fifth-Title span{
   color: #0ef;
 }
 .container50{
   display: flex;
- justify-content: space-around;
-  
+ justify-content: space-between;
+ flex-wrap: wrap;
+ padding:0  3rem;
+ width: 91vw;
+ margin: auto;
 }
-.container51{
-  width: 30%;
-  height: 700px;
-  padding: 5px 50px;
-  margin: 5px 20px;
+.fifth-subTitle{
+text-align: center;
+margin-bottom: 0.5rem;
 }
-.container50 h2{
-  text-align: center;
-  padding-bottom: 20px;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 5px;
-}
-.TechnicalBar .bar{
-  margin-top: 20px;
-}
-.TechnicalBar .bar:first-child{
-  margin-top: 0px;
-}
-.TechnicalBar .bar:last-child{
-  margin-bottom: 0px;
-}
-.bar{
-  font-size: 1.2rem;
-}
-.TechnicalBar .bar .indfo span{
-  font-size: 1rem;
-  font-weight: 700;
-  animation: showText 0.5s 1s linear forwards;
-}
-.TechnicalBar .bar .progress-line{
-  position: relative;
-  border-radius: 10px;
-  width: 100%;
-  height: 5px;
-  background-color: #000;
-  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-@keyframes animate{
-  100%{
-    transform: scaleX(1);
-  }
-}
-.TechnicalBar .bar .progress-line span{
-  height: 100%;
-  background-color: #0ef;
-  position: absolute;
-  border-radius: 10px;
-  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-.progress-line.html span{
-  width: 90%;
-}
-.progress-line.css span{
-  width: 60%;
-}
-.progress-line.javascript span{
-  width: 80%;
-}
-.progress-line.python span{
-  width: 70%;
-}
-.progress-line.react span{
-  width: 80%;
-}
-.progress-line.cpp span{
-  width: 90%;
-}
-.progress-line.java span{
-  width: 70%;
-}
-.TechnicalBar .bar .progress-line span::after{
-  position: absolute;
-  padding: 1px 8px;
-  background-color: #000;
-  color: #ffff;
-  font-size: 12px;
-  border-radius: 3px;
-  top: -28px;
-  right: -20px;
-  animation: showText 0.5s 1.5s linear forwards;
- 
-}
-.progress-line.html span::after{
-  content: "90%";
-}
-.progress-line.css span::after{
-  content: "60%";
-}
-.progress-line.javascript span::after{
-  content:" 80%";
-}
-.progress-line.python span::after{
-  content: "70%";
-}
-.progress-line.react span::after{
-  content: "80%";
-}
-.progress-line.cpp span::after{
-  content: "90%";
-}
-.progress-line.java span::after{
-  content:" 70%";
+.container52,.container51{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
 }
 .radial-bars{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 20px;
+  flex-direction: column;
 }
-.container52{
-  width: 30%;
+.container30{
+  width:99vw;
+  display: flex;
+  flex-wrap: wrap;
 }
-.radial-bars .radial-bar{
-  width: 50%;
-  height: 170px;
-  margin-bottom: 10px;
-  position: relative;
-}
-.radial-bars .radial-bar svg{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%) rotate(-90deg);
-  width: 120px;
-  height: 160px;
- 
-}
-.radial-bars .radial-bar .progress-bar{
-  stroke-width: 10;
-  stroke: #000;
-  fill: transparent;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 502;
-  stroke-linecap: round;
-  animation: animate-bar 1s linear forwards;
-}
-@keyframes animate-bar{
-  100%{
-    stroke-dashoffset: -1;
-  }
-}
-.path{
-  stroke-width: 10;
-  stroke: #0ef;
-  fill: transparent;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 502;
-  stroke-linecap: round;
-}
-.path-1{animation: animat-path1 1s 1s linear forwards;}
-.path-2{animation: animat-path1 1s 1s linear forwards;}
-.path-3{animation: animat-path1 1s 1s linear forwards;}
-.path-4{animation: animat-path1 1s 1s linear forwards;}
-@keyframes animat-path1{
-  100%{
-    stroke-dashoffset: 50;
-  }
-}
-@keyframes animat-path1{
-  100%{
-    stroke-dashoffset: 125;
-  }
-}
-@keyframes animat-path1{
-  100%{
-    stroke-dashoffset: 75;
-  }
-}
-@keyframes animat-path1{
-  100%{
-    stroke-dashoffset: 50;
-  }
-}
-
-.progress-bar.text{
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  bottom: -5px;
-  transform: rotateX(-50%);
-  
-}
-.radial-bar .percentage{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 17px;
-  font-weight: 500;
-  animation: showText 1s 1s linear forwards;
-  
-
-}
-.container31{
-  width: 40%;
-  width: 90vh;
+.container31,.container32{
+  max-width: 45vw;
   margin: 10px 70px ;
   padding: 30px;
 }
-.container31 h2{
+.container30 h2{
   text-align: center;
   margin-bottom: 10px;
 }
-.container31 span{
+.container30 h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container30 span{
   color: #0ef;
   font-size: 2.5rem;
 }
@@ -402,14 +192,14 @@ nav ul li a{
   border-left:3px solid #bababa;
 }
 .container31 .box-Contain .box{
-  position: relative;
+  /* position: relative; */
   padding: 10px;
   border: 1px solid #eaeaea;
   background-color: #0d1a16;
   cursor: pointer;
   transition: all 0.5s;
   margin-bottom: 10px;
-  width: 50%;
+  width: 90%;
 }
 .container31 .box-Contain .box:hover{
   box-shadow: 0px 3px 12px 0px #ccc;
@@ -417,7 +207,7 @@ nav ul li a{
 }
 .container31 .box-Contain .box::before{
   content: '';
-  position: absolute;
+  /* position: absolute; */
   height: 16px;
   width: 16px;
   border-radius: 50%;
@@ -483,14 +273,15 @@ nav ul li a{
   margin: 20px;
 }
 .container42 .block{
-  width: 25%;
+  width: 25vw;
   margin: 10px;
   border: 2px solid #0ef;
   padding: 30px;
 }
 .container42 .block img{
-  height:300px ;
-  width: 300px;
+  width:24vw;
+  height:24vw ;
+  border: 1px solid black;
 }
 
 .contact .contant {
@@ -524,6 +315,11 @@ nav ul li a{
   display: flex;
  
 }
+.container{
+  display: flex;
+  
+  
+}
 .contact .container .contactInfo .box .text{
   display: flex;
   flex-direction: column;
@@ -536,7 +332,7 @@ nav ul li a{
   
 }
 .contactForm {
-  width: 40%;
+  width: 40vw;
   padding: 30px;
   background: #ffff;
 }
@@ -563,6 +359,7 @@ nav ul li a{
 footer{
   background-color: #014242;
   color: azure;
+  
 }
 .copyright  {
   text-align: center;
